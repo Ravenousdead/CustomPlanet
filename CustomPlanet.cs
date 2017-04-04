@@ -36,7 +36,7 @@ public class CustomPlanet : Editor {
 		EditorGUILayout.LabelField ("Landscapes Info", EditorStyles.boldLabel);
 
 		pb.hasWater = EditorGUILayout.Toggle(new GUIContent("Has Water: ", ""), pb.hasWater);
-		pb.radiationAmount = EditorGUILayout.FloatField (new GUIContent("Radiation: ", "Radiation measured in rads."), pb.radiationAmount);
+		pb.radiationAmount = EditorGUILayout.Slider (new GUIContent("Radiation: ", "Radiation measured in rads."), pb.radiationAmount, 0f, 100f);
 		
 		EditorGUILayout.BeginVertical ("box");
 		EditorGUILayout.LabelField ("Elevations");
